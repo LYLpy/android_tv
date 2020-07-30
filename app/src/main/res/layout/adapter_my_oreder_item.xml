@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/sw_13dp"
+    android:paddingRight="@dimen/sw_13dp"
+    android:paddingTop="@dimen/sw_15dp"
+    android:paddingBottom="@dimen/sw_15dp"
+    style="@style/style_me_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/fragment_my_order_text_order_number"
+        android:textColor="@color/color_me_fragment_text"
+        android:text="订单号：XXXXXXXXXXXXX"
+        android:textSize="@dimen/sw_12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textColor="@color/color_me_fragment_golden"
+        android:id="@+id/fragment_my_order_text_whether_to_pay"
+        android:layout_alignParentRight="true"
+        android:text="已付款"
+        android:textSize="@dimen/sw_13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/sw_7dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_80dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:id="@+id/adapter_my_order_img"
+            android:layout_width="@dimen/sw_120dp"
+            android:layout_height="match_parent"></ImageView>
+        <TextView
+            android:layout_marginLeft="@dimen/sw_5dp"
+            android:layout_marginTop="@dimen/sw_25dp"
+            android:id="@+id/fragment_my_text_order_card"
+            android:textColor="@color/color_me_fragment_text"
+            android:textSize="@dimen/sw_22dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/adapter_my_order_img"
+            android:text="月卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sw_5dp"
+            android:layout_toRightOf="@+id/adapter_my_order_img"
+            android:id="@+id/adapter_my_order_text_time"
+            android:text="2019-06-06 10:30"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sw_11dp"
+            android:textColor="@color/color_me_fragment_text"
+            android:layout_height="wrap_content"></TextView>
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/sw_15dp"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/adapter_my_order_text_payment_01"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/sw_12dp"
+                android:id="@+id/fragment_my_order_text_amount_of_money_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/fragment_my_order_text_amount_of_money"
+                android:text="￥"
+                android:paddingBottom="@dimen/sw_10dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/color_me_fragment_golden"/>
+            <TextView
+                android:textSize="@dimen/sw_40dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/fragment_my_order_text_amount_of_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="700"
+                android:textStyle="bold"
+                android:textColor="@color/color_me_fragment_golden"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/adapter_my_order_text_payment_01"
+            android:layout_toLeftOf="@+id/adapter_my_order_text_payment"
+            android:textColor="@color/color_me_fragment_text"
+            android:text="实付金额："
+            android:textSize="@dimen/sw_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textSize="@dimen/sw_14dp"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:id="@+id/adapter_my_order_text_payment"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_me_fragment_golden"
+            android:text="￥700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>

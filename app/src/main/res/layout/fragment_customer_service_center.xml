@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_title_me_fragment"
+        ></include>
+
+    <RelativeLayout
+        android:background="@drawable/bg_me_fragment_color"
+        android:paddingRight="@dimen/sw_120dp"
+        android:paddingLeft="@dimen/sw_120dp"
+        android:paddingTop="@dimen/sw_80dp"
+        android:paddingBottom="@dimen/sw_80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/sw_12dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:padding="@dimen/sw_15dp"
+                android:layout_margin="@dimen/sw_25dp"
+                android:background="@drawable/shape_fragment_customer_service_wx_bg"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/fragment_customer_service_center_wx_img"
+                    android:padding="@dimen/sw_5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/wx_gl"
+                    android:layout_width="@dimen/sw_280dp"
+                    android:layout_height="@dimen/sw_280dp"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sw_15dp"
+                    android:gravity="center"
+                    android:text="扫一扫添加客服微信"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/sw_25dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/sw_15dp"
+                android:layout_margin="@dimen/sw_25dp"
+                android:orientation="vertical"
+                android:background="@drawable/shape_fragment_customer_service_web_bg"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/sw_5dp"
+                    android:id="@+id/fragment_customer_service_center_web_img"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/sw_280dp"
+                    android:layout_height="@dimen/sw_280dp"></ImageView>
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/sw_15dp"
+                    android:textColor="@color/color_white"
+                    android:text="扫一扫填写反馈意见"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sw_25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

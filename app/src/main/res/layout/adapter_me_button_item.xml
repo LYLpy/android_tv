@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.geling.view.gelingtv_XX_tongbu.ui.view.MaxLinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+style="@style/style_me_ll_layout"
+    android:gravity="center_vertical"
+    android:paddingRight="@dimen/sw_50dp"
+    android:paddingLeft="@dimen/sw_50dp"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sw_40dp"
+    android:paddingTop="@dimen/sw_10dp"
+    android:paddingBottom="@dimen/sw_10dp"
+    android:focusable="true"
+    android:id="@+id/adapter_me_button_layout_but_bg"
+>
+
+
+    <ImageView
+    android:id="@+id/adapter_me_button_item_img"
+    android:src="@drawable/history_icon_normal_main"
+    style="@style/style_main_iv"/>
+<TextView
+    android:layout_marginLeft="@dimen/sw_15dp"
+    android:id="@+id/adapter_me_button_item_text"
+    android:text="个人信息"
+    android:textSize="@dimen/sw_15dp"
+    style="@style/style_main_tv"
+    android:textColor="@color/color_white"/>
+</com.geling.view.gelingtv_XX_tongbu.ui.view.MaxLinearLayout>

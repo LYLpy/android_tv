@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv"
+          android:text=""
+          android:focusable="true"
+          android:layout_width="@dimen/sw_50dp"
+          android:layout_height="@dimen/sw_50dp"
+          android:lines="1"
+          android:textColor="@color/color_white"
+          android:gravity="center"
+          android:textSize="@dimen/sw_20dp"
+          android:background="@drawable/bg_border4_selector"
+           android:layout_marginLeft="@dimen/sw_5dp"
+            android:layout_marginRight="@dimen/sw_5dp"
+          android:layout_marginTop="@dimen/sw_10dp"/>

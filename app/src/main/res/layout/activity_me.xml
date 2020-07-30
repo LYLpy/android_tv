@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/color_me_ac_bg"
+    android:padding="@dimen/sw_50dp"
+tools:context="com.geling.view.gelingtv_XX_tongbu.ui.activity.MeActivity">
+<!--    android:background="@drawable/icon_we_acitivty_bg"-->
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_weight="3.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_above="@+id/activity_me_qr_code_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginBottom="@dimen/sw_15dp"
+            android:id="@+id/activity_me_title"
+            android:src="@drawable/icon_me_activity_log"
+            android:layout_width="@dimen/sw_180dp"
+            android:layout_height="@dimen/sw_80dp" />
+
+            <com.owen.tvrecyclerview.widget.TvRecyclerView
+                app:tv_verticalSpacingWithMargins="@dimen/sw_15dp"
+                android:descendantFocusability="afterDescendants"
+                android:id="@+id/activity_me_rec_but_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </com.owen.tvrecyclerview.widget.TvRecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_me_qr_code_layout"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="@dimen/sw_5dp"
+                    android:textSize="@dimen/sw_15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_white"
+                    android:text="客服微信"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <ImageView
+                    android:id="@+id/activity_me_wx_img"
+                    android:src="@drawable/wx_gl"
+                    android:layout_width="@dimen/sw_80dp"
+                    android:layout_height="@dimen/sw_80dp"></ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginBottom="@dimen/sw_5dp"
+                    android:textSize="@dimen/sw_15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_white"
+                    android:text="手机APP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+                <ImageView
+                    android:id="@+id/activity_me_app_img"
+                    android:src="@drawable/icon_wx_wm"
+                    android:layout_width="@dimen/sw_80dp"
+                    android:layout_height="@dimen/sw_80dp"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/sw_10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:focusable="false"
+            android:id="@+id/view_activity_me_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

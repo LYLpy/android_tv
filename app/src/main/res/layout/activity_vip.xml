@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--android:background="@drawable/main_bag"-->
+
+    <include layout="@layout/bg_vip"></include>
+
+<LinearLayout android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sw_20dp"
+        android:paddingRight="@dimen/sw_20dp"
+        android:layout_marginTop="@dimen/sw_60dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <!--<ImageView-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/logo_home_2x"/>-->
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/sw_150dp"
+                android:layout_height="@dimen/sw_35dp"
+                android:layout_marginLeft="@dimen/sw_30dp"/>
+            <LinearLayout
+                android:id="@+id/ll_vip_info"
+                style="@style/style_main_ll_layout"
+                android:nextFocusLeft="@id/ll_vip_info"
+                android:focusable="false"
+                android:layout_marginLeft="@dimen/sw_50dp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/iv_vip_info"
+                    android:src="@drawable/vip_icon_normal_main"
+                    style="@style/style_main_iv"/>
+                <TextView
+                    android:id="@+id/tv_vip_info"
+                    android:text="格灵VIP·开通|限时优惠！仅39元/月"
+                    style="@style/style_main_tv"
+                    android:textColor="@color/color_gold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:text="返回"
+                style="@style/style_tv_back"
+                android:layout_marginRight="@dimen/sw_50dp"
+                android:nextFocusLeft="@+id/tv_back"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+        <ImageView
+            android:src="@drawable/vip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sw_50dp"/>
+            <TextView
+                android:textColor="@color/color_white"
+                android:text="课程范围"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sw_20dp"
+                android:textSize="@dimen/sw_30dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.MyTvRecyclerViewHorizontal
+            android:id="@+id/rv_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sw_10dp"
+            android:padding="@dimen/sw_30dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_not_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:text="获取数据失败！"
+            android:textColor="@color/color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sw_40dp"/>
+        <TextView
+            android:id="@+id/tv_retry"
+            android:text="重试"
+            android:textColor="@color/color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sw_40dp"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/sw_20dp"
+            android:background="@drawable/selector_btn1"
+            android:paddingTop="@dimen/sw_10dp"
+            android:paddingBottom="@dimen/sw_15dp"
+            android:paddingLeft="@dimen/sw_40dp"
+            android:paddingRight="@dimen/sw_40dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

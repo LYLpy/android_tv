@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageViewBgUtils">
+        <!--放大倍数-->
+    <attr name="multiple" format="float"/>
+    <attr name="multipleX" format="float"/>
+    <attr name="multipleY" format="float"/>
+    </declare-styleable>
+</resources>

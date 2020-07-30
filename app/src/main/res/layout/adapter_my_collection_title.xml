@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/sw_30dp">
+<TextView
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="@dimen/sw_20dp"
+    android:id="@+id/adapter_my_collection_title_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    ></TextView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/adapter_me_collection_bag"
+        android:background="@color/color_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_3dp">
+    </TextView>
+</LinearLayout>

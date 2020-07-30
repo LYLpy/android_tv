@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sw_0dp_uvv">0dp</dimen>
+    <dimen name="sw_4dp_uvv">4dp</dimen>
+    <dimen name="sw_6dp_uvv">6dp</dimen>
+    <dimen name="sw_10dp_uvv">10dp</dimen>
+    <dimen name="sw_14dp_uvv">14dp</dimen>
+    <dimen name="sw_16dp_uvv">16dp</dimen>
+    <dimen name="sw_18dp_uvv">18dp</dimen>
+    <dimen name="sw_20dp_uvv">20dp</dimen>
+    <dimen name="sw_30dp_uvv">30dp</dimen>
+    <dimen name="sw_40dp_uvv">40dp</dimen>
+    <dimen name="sw_50dp_uvv">50dp</dimen>
+    <dimen name="sw_60dp_uvv">60dp</dimen>
+</resources>

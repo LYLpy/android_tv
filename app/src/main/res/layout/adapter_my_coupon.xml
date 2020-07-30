@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/style_me_fragment_layout"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/sw_25dp"
+    android:paddingTop="@dimen/sw_25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:layout_marginBottom="@dimen/sw_10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/fragment_my_coupon_text_money_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sw_70dp">
+                <TextView
+                    android:textSize="@dimen/sw_12dp"
+                    android:layout_marginBottom="@dimen/sw_2dp"
+                    android:id="@+id/fragment_my_cuopon_text_money_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textStyle="bold"
+                    android:paddingBottom="@dimen/sw_10dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/color_me_fragment_golden"/>
+                <TextView
+                    android:layout_toRightOf="@+id/fragment_my_cuopon_text_money_01"
+                    android:textSize="@dimen/sw_50dp"
+                    android:id="@+id/fragment_my_coupon_text_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="700"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_me_fragment_golden"/>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/fragment_my_coupon_use"
+                    android:layout_toRightOf="@+id/fragment_my_coupon_text_money"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/fragment_my_coupon_item_naem_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sw_50dp"
+                    android:layout_marginLeft="@dimen/sw_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/sw_3dp"
+                        android:layout_marginLeft="@dimen/sw_10dp"
+                        android:id="@+id/fragment_my_coupon_item_naem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="课程优惠卷"
+                        android:textColor="@color/color_me_fragment_text"
+                        android:textSize="@dimen/sw_17dp"></TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/sw_3dp"
+                        android:id="@+id/fragment_my_coupon_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sw_10dp"
+                        android:text="2018-2-2 18:30"
+                        android:textColor="@color/color_me_fragment_text"
+                        android:textSize="@dimen/sw_12dp"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/fragment_my_coupon_use"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sw_10dp"
+                    android:text="未使用"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/sw_22dp"></TextView>
+            </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

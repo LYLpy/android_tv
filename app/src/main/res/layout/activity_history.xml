@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--android:background="@drawable/main_bag"-->
+
+    <include layout="@layout/bg_imag"></include>
+
+<LinearLayout android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_60dp"
+        android:paddingLeft="@dimen/sw_20dp"
+        android:paddingRight="@dimen/sw_20dp"
+        android:layout_marginTop="@dimen/sw_30dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="历史记录"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sw_30dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_count"
+                android:text="共0个视频"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sw_10dp"
+                android:textSize="@dimen/sw_20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_page"
+                android:text="0/0页"
+                android:textColor="@color/color_normal_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sw_20dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_back"
+                android:text="返回"
+                style="@style/style_tv_back"
+                android:layout_marginLeft="@dimen/sw_30dp"
+                android:nextFocusLeft="@+id/tv_back"
+                android:nextFocusRight="@+id/tv_back"
+                android:nextFocusUp="@+id/tv_back"
+                android:layout_marginRight="@dimen/sw_50dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/sw_50dp"
+        android:paddingRight="@dimen/sw_50dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/sw_5dp">
+        <LinearLayout
+            android:layout_width="@dimen/sw_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_item1_history"
+                style="@style/style_ll_item_history">
+                <ImageView
+                    android:id="@+id/iv1_history"
+                    style="@style/style_iv_history"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_title_item1"
+                        android:text="标题"
+                        style="@style/history_item_title"/>
+                    <TextView
+                        android:id="@+id/tv_course_name_item1"
+                        android:text="来自学前：亲子乐园-安全知识"
+                        style="@style/history_item_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_item1"
+                        android:text="2019年8月30日     星期五"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sw_10dp"
+                        android:textSize="@dimen/sw_15dp"
+                        android:layout_marginTop="@dimen/sw_30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_item3_history"
+                style="@style/style_ll_item_history">
+                <ImageView
+                    android:id="@+id/iv3_history"
+                    style="@style/style_iv_history"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_title_item3"
+                        android:text="标题"
+                        style="@style/history_item_title"/>
+                    <TextView
+                        android:id="@+id/tv_course_name_item3"
+                        android:text="来自学前：亲子乐园-安全知识"
+                        style="@style/history_item_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_item3"
+                        android:text="2019年8月30日     星期五"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sw_10dp"
+                        android:textSize="@dimen/sw_15dp"
+                        android:layout_marginTop="@dimen/sw_30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_item5_history"
+                style="@style/style_ll_item_history">
+                <ImageView
+                    android:id="@+id/iv5_history"
+                    style="@style/style_iv_history"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_title_item5"
+                        android:text="标题"
+                        style="@style/history_item_title"/>
+                    <TextView
+                        android:id="@+id/tv_course_name_item5"
+                        android:text="来自学前：亲子乐园-安全知识"
+                        style="@style/history_item_name"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_item5"
+                        android:text="2019年8月30日     星期五"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sw_10dp"
+                        android:textSize="@dimen/sw_15dp"
+                        android:layout_marginTop="@dimen/sw_30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/sw_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ll_item2_history"
+                    style="@style/style_ll_item_history">
+                    <ImageView
+                        android:id="@+id/iv2_history"
+                        style="@style/style_iv_history"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_title_item2"
+                            android:text="标题"
+                            style="@style/history_item_title"/>
+                        <TextView
+                            android:id="@+id/tv_course_name_item2"
+                            android:text="来自学前：亲子乐园-安全知识"
+                            style="@style/history_item_name"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_item2"
+                            android:text="2019年8月30日     星期五"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sw_10dp"
+                            android:textSize="@dimen/sw_15dp"
+                            android:layout_marginTop="@dimen/sw_30dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_item4_history"
+                    style="@style/style_ll_item_history">
+                    <ImageView
+                        android:id="@+id/iv4_history"
+                        style="@style/style_iv_history"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_title_item4"
+                            android:text="标题"
+                            style="@style/history_item_title"/>
+                        <TextView
+                            android:id="@+id/tv_course_name_item4"
+                            android:text="来自学前：亲子乐园-安全知识"
+                            style="@style/history_item_name"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_item4"
+                            android:text="2019年8月30日     星期五"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sw_10dp"
+                            android:textSize="@dimen/sw_15dp"
+                            android:layout_marginTop="@dimen/sw_30dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_item6_history"
+                    style="@style/style_ll_item_history">
+
+                    <ImageView
+                        android:id="@+id/iv6_history"
+                        style="@style/style_iv_history"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_title_item6"
+                            android:text="标题"
+                            style="@style/history_item_title"/>
+                        <TextView
+                            android:id="@+id/tv_course_name_item6"
+                            android:text="来自学前：亲子乐园-安全知识"
+                            style="@style/history_item_name"/>
+
+                        <TextView
+                            android:id="@+id/tv_time_item6"
+                            android:text="2019年8月30日     星期五"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sw_10dp"
+                            android:textSize="@dimen/sw_15dp"
+                            android:layout_marginTop="@dimen/sw_30dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_next_page"
+            android:src="@drawable/arrow_btn_blue_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/iv_pre_page"
+            android:src="@drawable/arrow_btn_blue_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_not_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:text="您还没有任何观看记录哦！"
+            android:textColor="@color/color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sw_40dp"/>
+        <TextView
+            android:id="@+id/tv_go_to_explore"
+            android:text="去探索"
+            android:textColor="@color/color_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sw_40dp"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/sw_20dp"
+            android:background="@drawable/selector_btn1"
+            android:paddingTop="@dimen/sw_10dp"
+            android:paddingBottom="@dimen/sw_15dp"
+            android:paddingLeft="@dimen/sw_40dp"
+            android:paddingRight="@dimen/sw_40dp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

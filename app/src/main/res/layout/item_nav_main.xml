@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll"
+              style="@style/style_navigation_ll"
+              android:layout_height="@dimen/sw_55dp"
+              android:layout_width="@dimen/sw_160dp"
+              android:gravity="center">
+
+    <!--android:background="@drawable/selector_main_nav"-->
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@drawable/home_normal"
+        style="@style/style_navigation_iv"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv"
+            android:text="首页"
+            style="@style/style_navigation_tv_name"/>
+        <TextView
+            android:id="@+id/tv_divider"
+            style="@style/style_tv_divider"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorButtonLayout">
+        <attr name="v_selection_drawable" format="reference"></attr>
+        <attr name="v_selection_color" format="color"/>
+        <attr name="v_no_focus_color" format="color"/>
+    </declare-styleable>
+
+</resources>

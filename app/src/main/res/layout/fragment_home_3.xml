@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_root_view_home_3"
+              android:layout_marginLeft="@dimen/sw_36dp"
+              android:layout_marginTop="@dimen/sw_home_content_margin_top"
+              android:focusable="false"
+               android:visibility="gone">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_366dp"
+        android:gravity="center_vertical"
+        android:focusable="false">
+
+        <FrameLayout
+            android:background="@drawable/bg_border7_selector"
+            android:id="@+id/video_view_home_parent_3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="@dimen/sw_592dp"
+            android:layout_height="@dimen/sw_352dp"
+            android:padding="@dimen/sw_4dp"
+            android:layout_marginLeft="@dimen/sw_6dp"
+            android:focusable="true"
+            android:nextFocusLeft="@+id/video_view_home_parent_3"
+            android:nextFocusDown="@+id/siv4_home_3">
+            <!--<example.getlearn.tv.ui.view.CustomVideoView-->
+                <!--android:id="@+id/video_view_home_3"-->
+                <!--android:focusable="false"-->
+                <!--android:layout_width="@dimen/sw_584dp"-->
+                <!--android:layout_height="@dimen/sw_348dp"-->
+                <!--android:nextFocusRight="@id/siv1_home_3"-->
+                <!--android:nextFocusDown="@id/siv4_home_3"/>-->
+            <com.universalvideoview.UniversalVideoViewSmall
+                android:id="@+id/video_view_home_3"
+                android:layout_width="@dimen/sw_584dp"
+                android:layout_height="@dimen/sw_348dp"
+                android:layout_gravity="center"
+                app:uvv_autoRotation="true"
+                app:uvv_fitXY="true" />
+
+            <com.universalvideoview.UniversalMediaController
+                android:id="@+id/media_controller_3"
+                android:visibility="gone"
+                android:layout_width="@dimen/sw_584dp"
+                android:layout_height="@dimen/sw_348dp"
+                app:uvv_scalable="true" />
+        </FrameLayout>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv1_home_3"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_height="@dimen/sw_352dp"
+            android:layout_marginLeft="@dimen/sw_12dp"
+            android:layout_marginTop="@dimen/sw_0dp"
+            android:nextFocusRight="@+id/siv2_home_3"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/sw_300dp"
+            android:layout_height="@dimen/sw_360dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sw_8dp">
+
+            <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+                android:id="@+id/siv2_home_3"
+                style="@style/style_main_fragment_top_iv"
+                android:nextFocusRight="@id/siv2_home_3"
+                android:layout_marginTop="@dimen/sw_0dp"/>
+            
+            <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+                android:id="@+id/siv3_home_3"
+                style="@style/style_main_fragment_top_iv"
+                android:nextFocusDown="@id/siv7_home_3"
+                android:nextFocusRight="@id/siv3_home_3"
+                android:layout_marginTop="@dimen/sw_12dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_main_rel_03_3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sw_minus_14dp">
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv4_home_3"
+            style="@style/style_main_fragment_top_iv"
+            android:nextFocusLeft="@id/siv4_home_3"
+            android:layout_marginLeft="@dimen/sw_5dp"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv5_home_3"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv6_home_3"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv7_home_3"
+            style="@style/style_main_fragment_top_iv"
+            android:nextFocusRight="@id/siv7_home_3"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_title_me_fragment"
+        ></include>
+
+
+    <RelativeLayout
+        android:background="@drawable/bg_me_fragment_color"
+        android:paddingLeft="@dimen/sw_25dp"
+        android:paddingRight="@dimen/sw_25dp"
+        android:paddingBottom="@dimen/sw_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/sw_12dp">
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:layout_marginTop="@dimen/sw_15dp"
+            app:tv_horizontalSpacingWithMargins="@dimen/sw_50dp"
+            android:id="@+id/fragment_my_order_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.owen.tvrecyclerview.widget.TvRecyclerView>
+        <RelativeLayout
+            android:layout_below="@+id/fragment_my_order_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.owen.tvrecyclerview.widget.TvRecyclerView
+                android:paddingTop="@dimen/sw_15dp"
+                android:visibility="gone"
+                app:tv_horizontalSpacingWithMargins="@dimen/sw_35dp"
+                app:tv_verticalSpacingWithMargins="@dimen/sw_15dp"
+                android:id="@+id/fragment_my_order_re_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.owen.tvrecyclerview.widget.TvRecyclerView>
+
+            <include layout="@layout/view_data_null"></include>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

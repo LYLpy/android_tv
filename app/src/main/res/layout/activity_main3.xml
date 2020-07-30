@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--android:background="@drawable/main_bag"-->
+
+    <include layout="@layout/bg_imag"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/sw_50dp"
+            android:layout_marginRight="@dimen/sw_50dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_70dp"
+            android:layout_marginTop="@dimen/sw_15dp">
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo_home_2x"
+                android:layout_width="@dimen/sw_150dp"
+                android:layout_height="@dimen/sw_36dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/sw_60dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:id="@+id/ll_vip_info"
+                    style="@style/style_main_ll_layout"
+                    android:nextFocusLeft="@id/ll_vip_info"
+                    android:layout_width="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_vip_info"
+                        android:src="@drawable/vip_icon_normal_main"
+                        style="@style/style_main_iv"/>
+                    <TextView
+                        android:id="@+id/tv_vip_info"
+                        android:text="VIP订购"
+                        style="@style/style_main_tv"
+                        android:textColor="@color/color_gold"/>
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_vip_info"-->
+                        <!--android:text="格灵VIP·开通|限时优惠！仅39元/月"-->
+                        <!--style="@style/style_main_tv"-->
+                        <!--android:textColor="@color/color_gold"/>-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_history"
+                    style="@style/style_main_ll_layout"
+                    android:layout_marginLeft="@dimen/sw_10dp">
+                    <ImageView
+                        android:id="@+id/iv_history"
+                        android:src="@drawable/history_icon_normal_main"
+                        style="@style/style_main_iv"/>
+                    <TextView
+                        android:id="@+id/tv_history"
+                        android:text="历史"
+                        style="@style/style_main_tv"
+                        android:textColor="@color/color_white"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_search"
+                    style="@style/style_main_ll_layout"
+                    android:layout_marginLeft="@dimen/sw_10dp"
+                    android:nextFocusRight="@id/ll_collect">
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:src="@drawable/search_icon_normal_main"
+                        style="@style/style_main_iv"/>
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:text="搜索"
+                        style="@style/style_main_tv"
+                        android:textColor="@color/color_white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_collect"
+                    style="@style/style_main_ll_layout"
+                    android:layout_marginLeft="@dimen/sw_10dp"
+                    android:nextFocusRight="@id/ll_collect"
+                    android:layout_marginRight="@dimen/sw_10dp">
+                    <ImageView
+                        android:id="@+id/iv_mine"
+                        android:src="@drawable/ic_mine_normal"
+                        style="@style/style_main_iv"/>
+                    <TextView
+                        android:id="@+id/tv_mine"
+                        android:text="我的"
+                        style="@style/style_main_tv"
+                        android:textColor="@color/color_white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/activity_main_rec_layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/sw_18dp"
+                    android:textColor="@color/color_16"
+                    android:id="@+id/activity_main_text_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/sw_18dp"
+                    android:textColor="@color/color_16"
+                    android:layout_below="@+id/activity_main_text_01"
+                    android:id="@+id/activity_main_text_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:visibility="gone"
+                android:textSize="@dimen/sw_35dp"
+                android:textColor="@color/color_16"
+                android:textStyle="bold"
+                android:layout_marginRight="@dimen/sw_3dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/activity_main_rec_layout_01"
+                android:id="@+id/activity_main_text_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    <com.geling.view.gelingtv_XX_tongbu.ui.view.CustomRecycleView
+        android:id="@+id/rv_nav_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sw_48dp"
+        android:paddingRight="@dimen/sw_30dp">
+    </com.geling.view.gelingtv_XX_tongbu.ui.view.CustomRecycleView>
+        <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:layout_marginLeft="@dimen/sw_5dp">
+        <!--android:descendantFocusability="afterDescendants">-->
+        <!--<include layout="@layout/fragment_home_1"/>-->
+        <include layout="@layout/fragment_home_2"/>
+        <include layout="@layout/fragment_home_3"/>
+        <!--<include layout="@layout/fragment_home_4"/>-->
+        <!--<include layout="@layout/fragment_home_5"/>-->
+        <!--<include layout="@layout/fragment_child"/>-->
+        <!--<include layout="@layout/fragment_primary_school"/>-->
+        <!--<include layout="@layout/fragment_not_data"/>-->
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

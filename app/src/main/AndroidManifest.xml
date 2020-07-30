@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.geling.view.gelingtv_XX_tongbu"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_luncher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        tools:ignore="MissingTvBanner">
+        <activity android:name=".ui.activity.SecretActivity"></activity>
+        <activity android:name=".ui.activity.ProtocolActivity" />
+        <activity
+            android:name=".ui.activity.DialogActivity"
+            android:theme="@style/dialogstyle" />
+        <activity android:name=".ui.activity.SignInActivity" />
+        <activity
+            android:name=".ui.activity.MeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:icon="@drawable/icon_luncher2"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/icon_luncher2"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity3"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.CollectionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.CourseDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.VideoPlayActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.VipActivity3"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.dangbei.dangbeipaysdknew.DangBeiPayActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="DANGBEI_APPKEY"
+            android:value="6a911f83ed67c971a4069dbd3e36da22" /> <!-- value的值填写渠道名称，例如当贝DBkey,这里设置动态渠道变量 -->
+        <meta-data
+            android:name="DANGBEI_PAY_APPKEY"
+            android:value="f626c98106d46483419a9085" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+    </application>
+
+</manifest>

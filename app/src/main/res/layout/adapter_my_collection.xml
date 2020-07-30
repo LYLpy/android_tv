@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_my_collection_item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_me_fragment_layout"
+    android:paddingLeft="@dimen/sw_15dp"
+    android:paddingRight="@dimen/sw_15dp"
+    android:focusableInTouchMode="true"
+android:layout_width="match_parent"
+android:layout_height="@dimen/sw_140dp">
+<ImageView
+    android:layout_marginRight="@dimen/sw_15dp"
+    android:id="@+id/adapter_my_collection_img"
+    android:layout_width="@dimen/sw_100dp"
+    android:scaleType="fitXY"
+    android:layout_height="@dimen/sw_120dp"></ImageView>
+<TextView
+    android:textColor="@color/color_me_fragment_text_02"
+    android:textSize="@dimen/sw_20dp"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/sw_15dp"
+    android:id="@+id/adapter_my_collection_text_name"
+    android:layout_toRightOf="@+id/adapter_my_collection_img"
+    android:text="人教初中历史"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+<TextView
+    android:layout_marginTop="@dimen/sw_15dp"
+    android:layout_below="@+id/adapter_my_collection_text_name"
+    android:textSize="@dimen/sw_15dp"
+    android:textStyle="bold"
+    android:textColor="@color/color_me_fragment_text_01"
+    android:id="@+id/adapter_my_collection_text_from_name"
+    android:layout_toRightOf="@+id/adapter_my_collection_img"
+    android:text="来自初中同步精讲9年级"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+
+</RelativeLayout>

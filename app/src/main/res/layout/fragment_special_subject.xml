@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_subject_root_view">
+    <!--android:background="@drawable/ac_bg_01"-->
+    <include layout="@layout/bg_imag"></include>
+    <LinearLayout
+        android:background="@color/color_03"
+        android:orientation="vertical"
+        android:id="@+id/activity_primary_school_class_layout"
+        android:paddingTop="@dimen/sw_30dp"
+        android:paddingLeft="@dimen/sw_50dp"
+        android:paddingRight="@dimen/sw_50dp"
+        android:paddingBottom="@dimen/sw_50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="@dimen/sw_15dp"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils
+                app:scrollMode="followScroll"
+                app:isAutoProcessFocus="false"
+                android:id="@+id/activity_primary_school_class_rec_list_02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/sw_20dp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/sw_20dp"
+                    android:layout_marginLeft="@dimen/sw_20dp"
+                    android:padding="@dimen/sw_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils
+                        android:layout_centerInParent="true"
+                        app:scrollMode="followScroll"
+                        app:isAutoProcessFocus="false"
+                        android:id="@+id/activity_primary_school_class_rec_list_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="@dimen/sw_10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils
+                    app:scrollMode="followScroll"
+                    app:isAutoProcessFocus="false"
+                    android:id="@+id/activity_primary_school_class_rec_list_jh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </com.geling.view.gelingtv_XX_tongbu.ui.view.TvRecyclerViewTiemrUtils>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/repeat_advertisement_imag_layout"></include>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/timer_2000"-->
+    <!--android:background="@drawable/timer_2000"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

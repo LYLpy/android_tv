@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        style="@style/style_rl_item">
+        <TextView
+            android:id="@+id/tv_name"
+            android:textColor="@color/color_white"
+            android:text="1.熊出来，没注意XXX"
+            style="@style/sytle_tv_video_name"/>
+        <ImageView
+            android:id="@+id/iv_isfree"
+            android:src="@drawable/course_info_icon_vip"
+            style="@style/style_iv_is_free"/>
+        <ImageView
+            android:id="@+id/iv_playing"
+            android:src="@drawable/course_info_playing"
+            style="@style/style_course_info_iv_playing"/>
+    </RelativeLayout>
+
+</LinearLayout>

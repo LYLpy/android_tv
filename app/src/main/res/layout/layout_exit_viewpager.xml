@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sw_10dp"
+        android:gravity="center">
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/iv_1"
+            style="@style/style_exit_page_iv"
+            android:layout_marginLeft="@dimen/sw_30dp"/>
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/iv_2"
+            style="@style/style_exit_page_iv"/>
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/iv_3"
+            style="@style/style_exit_page_iv"/>
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/iv_4"
+            style="@style/style_exit_page_iv"/>
+    </LinearLayout>
+</LinearLayout>

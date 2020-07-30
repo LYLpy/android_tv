@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_root_view_home_5"
+              android:layout_marginLeft="@dimen/sw_home_content_margin_left"
+              android:layout_marginTop="@dimen/sw_home_content_margin_top">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_366dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:background="@drawable/bg_border7_selector"
+            android:id="@+id/ll_xbanner_home_parent_5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:layout_width="@dimen/sw_592dp"
+            android:layout_height="@dimen/sw_352dp"
+            android:padding="@dimen/sw_4dp"
+            android:layout_marginLeft="@dimen/sw_6dp"
+            android:nextFocusLeft="@+id/ll_xbanner_home_parent_5"
+            android:nextFocusDown="@id/siv3_home_5">
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/xbanner_home_5"
+                android:overScrollMode="never"
+                android:layout_width="@dimen/sw_584dp"
+                android:layout_height="@dimen/sw_344dp"
+                app:AutoPlayTime="3000"
+                app:pointsContainerBackground="@color/color_21"
+                app:pointsPosition="CENTER"
+                app:tipTextColor="#FFFFFFFF"/>
+
+        </LinearLayout>
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv1_home_5"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_height="@dimen/sw_352dp"
+            android:nextFocusRight="@id/siv2_home_5"
+            android:layout_marginLeft="@dimen/sw_12dp"
+            android:layout_marginTop="@dimen/sw_0dp"/>
+
+            <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+                android:id="@+id/siv2_home_5"
+                style="@style/style_main_fragment_top_iv"
+                android:layout_height="@dimen/sw_352dp"
+                android:nextFocusRight="@id/siv2_home_5"
+                android:layout_marginLeft="@dimen/sw_12dp"
+                android:layout_marginTop="@dimen/sw_0dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activity_main_rel_03_5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sw_minus_14dp">
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv3_home_5"
+            style="@style/style_main_fragment_top_iv"
+            android:nextFocusLeft="@id/siv3_home_5"
+            android:layout_marginLeft="@dimen/sw_5dp"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv4_home_5"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv5_home_5"
+            style="@style/style_main_fragment_top_iv"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+
+        <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewBgUtils
+            android:id="@+id/siv6_home_5"
+            style="@style/style_main_fragment_top_iv"
+            android:nextFocusRight="@+id/siv6_home_5"
+            android:layout_marginLeft="@dimen/sw_12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+    <!--半透明灰色-->
+    <color name="translucent_gray1">#66acacac</color>
+    <color name="translucent_gray2">#779f9f9f</color>
+    <color name="translucent_black">#77767676</color>
+    <color name="translucent_black2">#bb000000</color>
+    <color name="translucent_black3">#99000000</color>
+</resources>

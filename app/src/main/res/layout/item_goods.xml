@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/sw_260dp"
+              android:layout_height="@dimen/sw_240dp"
+              android:padding="@dimen/sw_5dp"
+              android:background="@drawable/bg_border7_selector"
+              android:focusable="true"
+              android:clickable="true"
+              android:layout_marginLeft="@dimen/sw_20dp"
+              android:layout_marginRight="@dimen/sw_20dp"
+              android:layout_marginTop="@dimen/sw_20dp"
+              android:layout_marginBottom="@dimen/sw_30dp">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center_vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:textColor="@color/color_gold"
+            android:textSize="@dimen/sw_27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/sw_10dp"
+            android:layout_marginRight="@dimen/sw_10dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_0dp"
+            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="bottom">
+            <TextView
+                android:id="@+id/tv_rmb_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textSize="@dimen/sw_24dp"
+                android:textColor="@color/color_white"/>
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/sw_69dp"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:id="@+id/tv_rmb_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textSize="@dimen/sw_20dp"
+                android:visibility="gone"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/sw_20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/sw_10dp"
+                android:textColor="@color/color_white_gray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

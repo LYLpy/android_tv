@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="@style/Theme.Leanback">
+    </style>
+    <!-- 自定义loading dialog -->
+    <style name="sytle_my_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_translucent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="style_main_ll_layout">
+        <item name="android:layout_width">@dimen/sw_100dp</item>
+        <item name="android:layout_height">@dimen/sw_40dp</item>
+        <item name="android:paddingLeft">@dimen/sw_20dp</item>
+        <item name="android:paddingRight">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_10dp</item>
+        <item name="android:paddingBottom">@dimen/sw_10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_border4_selector</item>
+    </style>
+
+    <style name="style_me_ll_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sw_40dp</item>
+        <item name="android:paddingLeft">@dimen/sw_20dp</item>
+        <item name="android:paddingRight">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_10dp</item>
+        <item name="android:paddingBottom">@dimen/sw_10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_border12_selector</item>
+    </style>
+
+    <style name="style_me_fragment_layout">
+        <item name="android:paddingLeft">@dimen/sw_20dp</item>
+        <item name="android:paddingRight">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_20dp</item>
+        <item name="android:paddingBottom">@dimen/sw_20dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_border11_selector</item>
+    </style>
+    <style name="style_me_fragment_button_01">
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_border15_selector</item>
+    </style>
+
+
+    <style name="style_me_fragment_title_button_layout">
+        <item name="android:paddingLeft">@dimen/sw_20dp</item>
+        <item name="android:paddingRight">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_20dp</item>
+        <item name="android:paddingBottom">@dimen/sw_20dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_border13_selector</item>
+    </style>
+
+    <style name="style_me_fragment_title_layout">
+        <item name="android:paddingLeft">@dimen/sw_20dp</item>
+        <item name="android:paddingRight">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_20dp</item>
+        <item name="android:paddingBottom">@dimen/sw_20dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_border12_selector</item>
+    </style>
+
+    <style name="style_main_iv">
+        <item name="android:layout_width">@dimen/sw_20dp</item>
+        <item name="android:layout_height">@dimen/sw_20dp</item>
+    </style>
+
+    <style name="style_main_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sw_5dp</item>
+        <item name="android:textSize">@dimen/sw_15dp</item>
+    </style>
+
+    <style name="style_navigation_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/sw_21dp</item>
+        <item name="android:paddingRight">@dimen/sw_21dp</item>
+        <item name="android:paddingTop">@dimen/sw_8dp</item>
+        <item name="android:paddingBottom">@dimen/sw_8dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:nextFocusDown">@id/fl</item>
+    </style>
+    <style name="style_navigation_iv">
+        <item name="android:minWidth">@dimen/sw_25dp</item>
+        <item name="android:minHeight">@dimen/sw_25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_navigation_tv_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/sw_26dp</item>
+        <item name="android:layout_marginLeft">@dimen/sw_2dp</item>
+    </style>
+
+    <style name="style_tv_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sw_2dp</item>
+        <item name="android:background">@color/color_blue</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="style_main_fragment_top_iv">
+        <item name="android:layout_width">@dimen/sw_290dp</item>
+        <item name="android:layout_height">@dimen/sw_170dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_4dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">@dimen/sw_18dp</item>
+    </style>
+    <style name="style_main_fragment2_iv">
+        <item name="android:layout_width">@dimen/sw_290dp</item>
+        <item name="android:layout_height">@dimen/sw_170dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_4dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">@dimen/sw_18dp</item>
+    </style>
+    <style name="style_iv_subject">
+        <item name="android:layout_width">@dimen/sw_255dp</item>
+        <item name="android:layout_height">@dimen/sw_255dp</item>
+        <item name="android:padding">@dimen/sw_5dp</item>
+        <item name="android:src">@drawable/placehold</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginLeft">@dimen/sw_5dp</item>
+    </style>
+    <style name="style_iv_history">
+        <item name="android:layout_width">@dimen/sw_190dp</item>
+        <item name="android:layout_height">@dimen/sw_190dp</item>
+        <item name="android:padding">@dimen/sw_5dp</item>
+        <item name="android:src">@drawable/placehold</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="style_ll_item_history">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_5dp</item>
+        <item name="android:background">@drawable/bg_border5_selector</item>
+    </style>
+
+    <style name="style_ll_controler_btn_course_detail">
+        <item name="android:layout_width">@dimen/sw_0dp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_height">@dimen/sw_60dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/bg_border4_selector</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+    </style>
+
+    <style name="style_iv_controller_btn_course_detail">
+        <item name="android:layout_width">@dimen/sw_30dp</item>
+        <item name="android:layout_height">@dimen/sw_30dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="style_tv_controller_btn_course_detail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sw_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/sw_5dp</item>
+        <item name="android:textColor">@color/color_normal_text_color</item>
+    </style>
+
+    <style name="style_rl_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/sw_60dp</item>
+        <!--<item name="android:background">@drawable/bg_border4_selector</item>-->
+        <!--<item name="android:focusable">true</item>-->
+        <item name="android:layout_marginLeft">@dimen/sw_12dp</item>
+        <!--<item name="android:visibility">gone</item>-->
+        <item name="android:layout_marginTop">@dimen/sw_12dp</item>
+    </style>
+
+    <style name="style_ll_content_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_iv_is_free">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sytle_tv_video_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/sw_20dp</item>
+        <item name="android:paddingTop">@dimen/sw_15dp</item>
+        <item name="android:paddingBottom">@dimen/sw_15dp</item>
+        <item name="android:paddingRight">@dimen/sw_35dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:paddingLeft">@dimen/sw_50dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_border4_selector</item>
+    </style>
+
+    <style name="style_course_info_iv_playing">
+        <item name="android:layout_width">@dimen/sw_60dp</item>
+        <item name="android:layout_height">@dimen/sw_25dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/sw_minus_10dp</item>
+    </style>
+
+    <style name="style_tv_search_tips">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/sw_15dp</item>
+    </style>
+
+    <style name="style_ll_search_tips">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="style_tv_search_tips_chinese">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sw_35dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_minus_8dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="style_child_recommend_top">
+        <item name="android:layout_width">@dimen/sw_230dp</item>
+        <item name="android:layout_height">@dimen/sw_165dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_4dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">@dimen/sw_12dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_5dp</item>
+    </style>
+
+    <style name="style_child_recommend_bottom">
+        <item name="android:layout_width">@dimen/sw_230dp</item>
+        <item name="android:layout_height">@dimen/sw_165dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_4dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">@dimen/sw_12dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_12dp</item>
+    </style>
+    <style name="style_primary_school_recommend_bottom">
+        <item name="android:layout_width">@dimen/sw_230dp</item>
+        <item name="android:layout_height">@dimen/sw_165dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_4dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">@dimen/sw_12dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_12dp</item>
+    </style>
+
+    <style name="style_exit_page_iv">
+        <item name="android:layout_width">@dimen/sw_250dp</item>
+        <item name="android:layout_height">@dimen/sw_250dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">@dimen/sw_20dp</item>\
+        <item name="android:focusable">true</item>
+        <item name="android:padding">@dimen/sw_5dp</item>
+        <item name="android:background">@drawable/bg_border7_selector</item>
+        <item name="android:layout_marginBottom">@dimen/sw_10dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_10dp</item>
+    </style>
+
+    <style name="style_exit_page_flip">
+        <item name="android:layout_width">@dimen/sw_50dp</item>
+        <item name="android:layout_height">@dimen/sw_50dp</item>
+        <item name="android:padding">@dimen/sw_5dp</item>
+        <item name="android:background">@drawable/bg_border8_selector</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="style_tv_back" parent="style_main_tv">
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/tv_color_selector</item>
+        <item name="android:background">@drawable/bg_border4_selector</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/sw_100dp</item>
+        <item name="android:layout_height">@dimen/sw_40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sw_18dp</item>
+    </style>
+
+    <style name="style_collection_item_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+        <item name="android:textSize">@dimen/sw_30dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="style_collection_item_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+        <item name="android:textSize">@dimen/sw_20dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">@dimen/sw_15dp</item>
+        <item name="android:textColor">@color/color_normal_text_color</item>
+    </style>
+
+    <style name="history_item_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+        <item name="android:textSize">@dimen/sw_30dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="history_item_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+        <item name="android:textSize">@dimen/sw_20dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginTop">@dimen/sw_15dp</item>
+    </style>
+
+    <style name="style_rbtn_vip">
+        <item name="android:layout_width">@dimen/sw_200dp</item>
+        <item name="android:layout_height">@dimen/sw_70dp</item>
+        <item name="android:layout_marginLeft">@dimen/sw_40dp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">@dimen/sw_40dp</item>
+        <item name="android:layout_marginTop">@dimen/sw_minus_10dp</item>
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:theme">@style/rbtn_style</item>-->
+    </style>
+    <style name="new_task_style">
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+    <style name="rbtn_style">
+        <item name="android:colorControlActivated" tools:ignore="NewApi">@color/color_black</item>
+        <item name="android:button" >@null</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:textSize" >@dimen/sw_10dp</item>
+        <item name="android:gravity" >center</item>
+    </style>
+
+    <style name="pay_way">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/sw_60dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/selector_meal_item_bg</item>
+    </style>
+    <style name="dialogstyle">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="pay_way_iv">
+        <item name="android:layout_width">@dimen/sw_39dp</item>
+        <item name="android:layout_height">@dimen/sw_39dp</item>
+    </style>
+
+    <style name="pay_tv">
+        <item name="android:textSize">@dimen/sw_30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/sw_10dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="color_white">#ffffff</color>
+    <color name="btn_play_now_normal">#34568a</color>
+    <color name="btn_play_now_sel">#38609e</color>
+    <color name="bg_pay_qr_code_dia_left">#192941</color>
+    <color name="bg_pay_qr_code_dia_right">#263e62</color>
+    <color name="color_gray">#a7a7a7</color>
+    <color name="color_white_gray">#c9c4ec</color>
+    <color name="color_white_2">#bfbfbf</color>
+    <color name="color_black">#000000</color>
+    <color name="color_black_333">#333</color>
+    <color name="color_01">#ff7367</color>
+    <color name="color_02">#f1f62c</color>
+    <color name="color_03">#3274bf</color>
+    <color name="color_04">#7399ba</color>
+    <color name="color_05">#f1f737</color>
+    <color name="color_06">#365e9b</color>
+    <color name="color_07">#8c5cbfff</color>
+    <color name="color_08">#c25c06</color>
+    <color name="color_09">#93b3de</color>
+    <color name="color_10">#b38f2e</color>
+    <color name="color_11">#9ba5c5</color>
+    <color name="color_12">#488eea</color>
+    <color name="color_13">#3b4a75</color>
+    <color name="color_14">#97fffa</color>
+    <color name="color_15">#ffea3b</color>
+    <color name="color_16">#376faa</color>
+    <color name="color_17">#7e5217</color>
+    <color name="color_18">#e5e7ea</color>
+    <!--半透明黑，dialog背景-->
+    <color name="color_translucent">#cc000000</color>
+    <color name="color_translucent_backup">#80000000</color>
+    <color name="color_19">#fff701</color>
+    <color name="color_20">#f4a324</color>
+    <color name="color_21">#00ffffff</color>
+    <color name="color_22">#77000000</color>
+    <color name="color_23">#3f000000</color>
+    <color name="color_24">#ffffff</color>
+    <color name="color_25">#d55a5a5a</color>
+    <color name="color_26">#b3000000</color>
+    <color name="color_27">#ff0004</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_gold">#ffcc00</color>
+    <color name="color_gold_2">#f9e7b9</color>
+    <color name="color_gold_3">#ffcc74</color>
+    <color name="color_blue">#0562ed</color>
+    <color name="color_goods_name">#fdc772</color>
+    <color name="color_top_tv_main_normal">#323441</color>
+    <color name="transparent">#00000000</color>
+
+    <!--这几个是主背景色-->
+    <!--培优TV版主背景色-->
+    <color name="bg_main">#131e35</color>
+    <color name="color_bg_main">#252432</color>
+    <color name="color_bg_main_deep">#21202d</color>
+    <color name="color_bg_normal_light">#272633</color>
+    <color name="color_normal_text_color">#cfcfcf</color>
+
+    <!--黑金色-->
+    <color name="black_gold">#9d5f09</color>
+    <color name="gold_meal_name">#9a5911</color>
+    <color name="gold_meal_average">#b7823a</color>
+    <!--半透明灰色-->
+    <color name="translucent_gray1">#66acacac</color>
+    <color name="translucent_gray2">#779f9f9f</color>
+    <color name="translucent_black">#77767676</color>
+    <color name="translucent_black2">#bb000000</color>
+    <color name="translucent_black3">#99000000</color>
+<!--半透明白色-->
+    <color name="translucent_white_1">#1FFFFFFF</color>
+
+    <item name="image_key" type="id" />
+    <item name="text_key" type="id" />
+    <item name="image_school_class_key" type="id" />
+    <item name="tage_key" type="id" />
+    <item name="composition_adapter_key" type="id" />
+    <!-- 我的页面-->
+    <color name="color_me_fragment_bg">#5E202B3F</color>
+    <color name="color_me_ac_bg">#131e35</color>
+    <color name="color_me_fragment_title_button">#202B3F</color>
+    <color name="color_me_fragment_button">#0B1A37</color>
+    <color name="color_me_fragment_golden">#fdc530</color>
+    <color name="color_me_fragment_text">#d3d3d4</color>
+    <color name="color_me_fragment_text_01">#cfcfcf</color>
+    <color name="color_me_fragment_text_02">#f1f3f3</color>
+    <color name="color_me_fragment_adapter_but_bg">#00FFFFFF</color>
+    <color name="color_me_fragment_coupon_et_bg">#D3D3D5</color>
+    <!-- 键盘 -->
+    <color name="color_view_key_text_color" >#676767</color>
+</resources>

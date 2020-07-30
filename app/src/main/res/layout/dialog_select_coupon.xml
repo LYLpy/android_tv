@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_select_coupon"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/sw_10dp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/sw_150dp"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="优惠券选择"
+                android:textSize="@dimen/sw_25dp"
+                android:textColor="@color/color_black_333"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:text="按遥控器确认键选择"
+                android:textSize="@dimen/sw_15dp"
+                android:textColor="@color/color_black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_title"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_570dp">
+            <com.geling.view.gelingtv_XX_tongbu.ui.view.MyTvRecyclerView
+                android:id="@+id/rv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/sw_10dp"
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:paddingBottom="@dimen/sw_20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

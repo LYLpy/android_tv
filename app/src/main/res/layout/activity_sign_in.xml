@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    tools:context=".ui.activity.SignInActivity">
+
+    <ImageView
+        android:id="@+id/activity_sign_in_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icon_sign_bg_02"></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/sw_55dp"
+        android:paddingTop="@dimen/sw_55dp"
+        android:paddingRight="@dimen/sw_55dp"
+        android:paddingBottom="@dimen/sw_65dp">
+
+        <RelativeLayout
+            android:id="@+id/activity_sign_in_re_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/sw_180dp"
+                android:layout_height="@dimen/sw_60dp"
+                android:layout_marginBottom="@dimen/sw_15dp"
+                android:src="@drawable/icon_me_activity_log" />
+
+            <LinearLayout
+                android:id="@+id/activity_sign_in_return"
+                android:layout_width="@dimen/sw_90dp"
+                android:layout_height="@dimen/sw_40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_border17_selector"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/sw_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回"
+                    android:textColor="#D7D7D7"
+                    android:textSize="@dimen/sw_15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/activity_sign_in_re_title_layout"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/sw_50dp"
+            android:paddingRight="@dimen/sw_50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/sign_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sw_10dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="@dimen/sw_8dp">
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/sw_400dp"
+                                android:layout_height="@dimen/sw_420dp"
+                                android:layout_centerInParent="true">
+
+                                <ImageView
+                                    android:id="@+id/activity_sign_in_wx_qr_code_bg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/shape_ac_sign_in_wx_bg_02"
+                                    android:visibility="visible"></ImageView>
+
+
+
+                                <ImageView
+                                    android:id="@+id/activity_sign_in_wx_qr_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/activity_sign_in_wx_qr_code_text"
+                                    android:focusable="true"
+                                    android:layout_marginTop="@dimen/sw_20dp"
+                                    android:padding="@dimen/sw_10dp"
+                                    android:src="@drawable/icon_code_delete"></ImageView>
+                                <!--                                                            android:layout_below="@+id/activity_wx_img_paddi"-->
+                                <TextView
+                                    android:id="@+id/activity_sign_in_wx_qr_code_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="@dimen/sw_15dp"
+                                    android:layout_marginBottom="@dimen/sw_25dp"
+                                    android:gravity="center"
+                                    android:text="微信扫一扫二维码登录"
+                                    android:textColor="#54548e"
+                                    android:textSize="@dimen/sw_30dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"></TextView>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/activity_sign_in_phone_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/sw_400dp"
+                                android:layout_height="@dimen/sw_420dp"
+                                android:layout_marginBottom="@dimen/sw_10dp"
+                                android:background="@drawable/icon_sign_phone_bg"
+                                android:paddingLeft="@dimen/sw_12dp"
+                                android:paddingRight="@dimen/sw_12dp">
+
+                                <LinearLayout
+                                    android:id="@+id/activity_sign_in_phone_layout_02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/sw_65dp"
+                                    android:layout_marginTop="@dimen/sw_65dp"
+                                    android:focusable="true"
+                                    android:gravity="center_vertical">
+
+                                    <TextView
+                                        android:id="@+id/dialog_sign_in_phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/sw_40dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="@dimen/sw_10dp"
+                                        android:layout_marginRight="@dimen/sw_10dp"
+                                        android:gravity="center_vertical"
+                                        android:hint="请输入手机号"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:textColor="@color/color_white"></TextView>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/activity_sign_in_phone_text_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/activity_sign_in_phone_layout_02"
+                                    android:layout_marginLeft="@dimen/sw_15dp"
+                                    android:layout_marginRight="@dimen/sw_15dp"
+                                    android:text="若该手机号未注册，我们将为您自动注册"
+                                    android:textColor="#666666"
+                                    android:textSize="@dimen/sw_12dp"></TextView>
+
+                                <LinearLayout
+                                    android:id="@+id/activity_sign_in_phone_01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/activity_sign_in_phone_text_01"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/dialog_sign_in_verification_code_but"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/sw_65dp"
+                                        android:layout_weight="1"
+                                        android:focusable="true"
+                                        android:gravity="center_vertical">
+
+                                        <TextView
+                                            android:id="@+id/dialog_sign_in_verification_code"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/sw_40dp"
+                                            android:layout_marginLeft="@dimen/sw_10dp"
+                                            android:layout_marginRight="@dimen/sw_10dp"
+                                            android:gravity="center_vertical"
+                                            android:hint="请输入验证码"
+                                            android:maxLines="1"
+                                            android:textColor="@color/color_white"></TextView>
+                                    </LinearLayout>
+
+                                    <com.geling.view.gelingtv_XX_tongbu.ui.view.ColorButtonLayout
+                                        android:id="@+id/dialog_sign_in_verification_code_button"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/sw_48dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/sw_5dp"
+                                        android:layout_weight="1"
+                                        android:focusable="true"
+                                        android:gravity="center"
+                                        app:v_selection_drawable="@drawable/layer_ac_sign_in_phone_et_bg_03">
+
+                                        <!--                            app:v_selection_drawable="@drawable/layer_ac_sign_in_phone_et_bg_03"-->
+                                        <TextView
+                                            android:id="@+id/dialog_sign_in_verification_code_text"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="发送验证码"
+                                            android:textColor="#666666" />
+                                    </com.geling.view.gelingtv_XX_tongbu.ui.view.ColorButtonLayout>
+                                </LinearLayout>
+
+                                <com.geling.view.gelingtv_XX_tongbu.ui.view.KeyboardView
+                                    android:id="@+id/activity_sign_in_list_key"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/activity_sign_in_phone_01"
+                                    android:layout_marginLeft="@dimen/sw_15dp"
+                                    android:layout_marginTop="@dimen/sw_15dp"
+                                    android:layout_marginRight="@dimen/sw_15dp"
+                                    android:layout_marginBottom="@dimen/sw_15dp"></com.geling.view.gelingtv_XX_tongbu.ui.view.KeyboardView>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/sign_check_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sw_10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:nextFocusLeft="@id/btn_agreement_user"
+                    android:checked="true"
+                    android:text="您已阅读并同意"
+                    android:id="@+id/check_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:nextFocusRight="@id/btn_agreement_Confidentiality"
+                    android:nextFocusLeft="@id/check_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sw_30dp"
+                    android:text="《用户协议》"
+                    android:id="@+id/btn_agreement_user"
+                    android:textColor="@color/color_me_fragment_golden"
+                    android:background="@drawable/bg_border11_b"
+                    android:textSize="@dimen/sw_18dp"></Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="和"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/sw_18dp"></TextView>
+
+                <Button
+                    android:nextFocusLeft="@id/btn_agreement_user"
+                    android:id="@+id/btn_agreement_Confidentiality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sw_30dp"
+                    android:text="《保密协议》"
+                    android:background="@drawable/bg_border11_b"
+                    android:textColor="@color/color_me_fragment_golden"
+                    android:textSize="@dimen/sw_18dp"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

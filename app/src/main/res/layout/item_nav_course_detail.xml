@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="@dimen/sw_5dp"
+        android:id="@+id/tv"
+        android:text=""
+        android:layout_width="@dimen/sw_100dp"
+        android:layout_height="@dimen/sw_45dp"
+        android:lines="1"
+        android:textColor="@color/color_white"
+        android:gravity="center"
+        android:focusable="true"
+        android:textSize="@dimen/sw_20dp"
+        android:layout_marginLeft="@dimen/sw_10dp"
+        android:background="@drawable/bg_border4_selector"/>

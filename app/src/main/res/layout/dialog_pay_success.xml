@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/iv_pay_success"
+        android:src="@drawable/pay_success"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/sw_180dp"
+        android:layout_height="@dimen/sw_180dp"
+        android:layout_marginTop="@dimen/sw_90dp"
+        android:layout_marginBottom="@dimen/sw_30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="@dimen/sw_860dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/sw_30dp"
+            android:layout_marginBottom="@dimen/sw_130dp"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sw_50dp"
+            android:lineSpacingExtra="@dimen/sw_10dp"
+            android:text="支付成功"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:text="返回"
+            android:textColor="@color/color_white"
+            android:layout_width="@dimen/sw_230dp"
+            android:layout_height="@dimen/sw_80dp"
+            android:focusable="true"
+            android:textSize="@dimen/sw_35dp"
+            android:paddingLeft="@dimen/sw_50dp"
+            android:paddingRight="@dimen/sw_50dp"
+            android:paddingTop="@dimen/sw_10dp"
+            android:paddingBottom="@dimen/sw_10dp"
+            android:gravity="center"
+            android:background="@drawable/bg_oval_blue"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/sw_200dp"/>
+    </RelativeLayout>
+</LinearLayout>

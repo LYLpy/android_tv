@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingHorizontal="@dimen/sw_5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingHorizontal="@dimen/sw_4dp"
+            android:text="aaa"
+            android:textSize="20sp"
+            android:id="@+id/tv_time"
+            android:textColor="@color/color_white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/color_white"
+            android:text="星期yi"
+            android:id="@+id/tv_week"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingHorizontal="@dimen/sw_4dp"
+        android:id="@+id/rv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

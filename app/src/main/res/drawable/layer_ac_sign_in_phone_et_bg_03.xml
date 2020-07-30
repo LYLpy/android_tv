@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/layer_ac_sign_in_phone_et_bg_03_a"></item>
+    <item android:state_focused="false" android:drawable="@drawable/layer_ac_sign_in_phone_et_bg_03_b"></item>
+</selector>

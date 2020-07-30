@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_title_me_fragment"
+        ></include>
+
+
+    <RelativeLayout
+        android:background="@drawable/bg_me_fragment_color"
+        android:paddingLeft="@dimen/sw_25dp"
+        android:paddingRight="@dimen/sw_25dp"
+        android:paddingBottom="@dimen/sw_8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/sw_12dp">
+
+        <com.owen.tvrecyclerview.widget.TvRecyclerView
+            android:paddingRight="@dimen/sw_20dp"
+            app:tv_horizontalSpacingWithMargins="@dimen/sw_60dp"
+            android:layout_marginTop="@dimen/sw_15dp"
+            android:id="@+id/fragment_my_collection_re_list_title"
+            android:layout_width="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:layout_marginBottom="@dimen/sw_15dp"
+            android:layout_height="wrap_content">
+        </com.owen.tvrecyclerview.widget.TvRecyclerView>
+
+        <RelativeLayout
+            android:layout_below="@+id/fragment_my_collection_re_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.owen.tvrecyclerview.widget.TvRecyclerView
+                android:visibility="visible"
+                app:tv_verticalSpacingWithMargins="@dimen/sw_15dp"
+                app:tv_horizontalSpacingWithMargins="@dimen/sw_35dp"
+                android:id="@+id/fragment_my_collection_re_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.owen.tvrecyclerview.widget.TvRecyclerView>
+
+            <include layout="@layout/view_data_null"></include>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

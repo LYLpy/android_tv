@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="@dimen/sw_20dp"
+              android:id="@+id/fl_root_view_not_data"
+              android:layout_marginLeft="@dimen/sw_home_content_margin_left"
+              android:visibility="gone">
+            <TextView
+                android:text="没有相关数据"
+                android:id="@+id/tv_not_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sw_30dp"
+                android:layout_gravity="center"/>
+
+</FrameLayout>

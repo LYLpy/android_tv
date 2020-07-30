@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="@dimen/sw_20dp"
+                android:id="@+id/ll_grade_subject_root_view">
+    <LinearLayout
+        android:layout_width="@dimen/sw_100dp"
+        android:layout_height="@dimen/sw_30dp">
+        <app.com.tvrecyclerview.TvRecyclerView
+            android:id="@+id/tv_rv_grade_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/sw_10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sw_360dp">
+            <LinearLayout
+                android:background="@drawable/bg_border2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="@dimen/sw_540dp"
+                android:layout_height="@dimen/sw_360dp">
+                <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewScaleUtils
+                    android:layout_width="@dimen/sw_540dp"
+                    android:layout_height="@dimen/sw_360dp"
+                    style="@style/style_main_fragment_top_iv"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/bg_border2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="@dimen/sw_540dp"
+                android:layout_height="@dimen/sw_360dp">
+                <com.geling.view.gelingtv_XX_tongbu.ui.view.ImageViewScaleUtils
+                    android:layout_width="@dimen/sw_540dp"
+                    android:layout_height="@dimen/sw_360dp"
+                    style="@style/style_main_fragment_top_iv"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/selector_home_imag_02"
+                android:layout_width="@dimen/sw_270dp"
+                android:padding="@dimen/sw_5dp"
+                android:layout_height="@dimen/sw_180dp"
+                android:focusable="true"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/selector_home_imag_02"
+                android:padding="@dimen/sw_5dp"
+                android:layout_width="@dimen/sw_270dp"
+                android:layout_height="@dimen/sw_180dp"/>
+            <ImageView
+                android:background="@drawable/selector_home_imag_02"
+                android:focusable="true"
+                android:scaleType="fitXY"
+                android:padding="@dimen/sw_5dp"
+                android:layout_width="@dimen/sw_270dp"
+                android:layout_height="@dimen/sw_180dp"/>
+
+            <ImageView
+                android:layout_width="@dimen/sw_270dp"
+                android:layout_height="@dimen/sw_180dp"
+                android:background="@drawable/selector_home_imag_02"
+                android:focusable="true"
+                android:padding="@dimen/sw_5dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
